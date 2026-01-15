@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.proj.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.proj.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.proj.ui.setting.SettingFragment"
+        android:label="Settings"
+        tools:layout="@layout/activity_setting" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.proj.ui.notifications.NotificationsFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_add"
+        android:name="com.example.proj.ui.add.AddFragment"
+        android:label="Add"
+        tools:layout="@layout/fragment_add" />
+
+    <fragment
+        android:id="@+id/navigation_passcode"
+        android:name="com.example.proj.ui.passcode.ActivityPasscode"
+        android:label="Passcode"
+        tools:layout="@layout/activity_passcode" />
+
+    <fragment
+        android:id="@+id/navigation_terms"
+        android:name="com.example.proj.ui.setting.TermsFragment"
+        android:label="Terms and Conditions"
+        tools:layout="@layout/fragment_terms"/>
+
+
+</navigation>

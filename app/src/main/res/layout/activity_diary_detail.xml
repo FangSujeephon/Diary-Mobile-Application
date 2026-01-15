@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDDFED">
+
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="380dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="104dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="#BCEFBAB6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameTxt"
+        android:layout_width="361dp"
+        android:layout_height="68dp"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="text"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/view5"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintHorizontal_bias="0.368"
+        app:layout_constraintStart_toStartOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.642" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="378dp"
+        android:layout_height="596dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="#BCEFBAB6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.814" />
+
+    <TextView
+        android:id="@+id/summaryTxt"
+        android:layout_width="393dp"
+        android:layout_height="461dp"
+        android:layout_marginBottom="64dp"
+        android:background="@android:color/transparent"
+        android:gravity="top|start"
+        android:hint="Write your Feelings...."
+        android:inputType="textMultiLine"
+        android:padding="12dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view5"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="@+id/view5"
+        app:layout_constraintTop_toTopOf="@+id/view5"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <Button
+        android:id="@+id/timeTxt"
+        android:layout_width="367dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="176dp"
+        android:backgroundTint="#C3B0B2EA"
+        android:text="Select Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="42dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_new_24" />
+
+    <ImageView
+        android:id="@+id/emotionIcon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="524dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeTxt"
+        app:srcCompat="@drawable/neutral_" />
+
+    <ImageView
+        android:id="@+id/btnEdit"
+        android:layout_width="105dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="84dp"
+        android:backgroundTint="#FFD580"
+        android:src="@drawable/baseline_edit_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnDelete"
+        android:layout_width="101dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="84dp"
+        android:backgroundTint="#FF7070"
+        android:src="@drawable/baseline_delete_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

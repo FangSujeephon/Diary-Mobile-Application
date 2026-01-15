@@ -1,0 +1,22 @@
+<resources>
+    <!-- ชื่อแอป -->
+    <string name="app_name">โปรเจค</string>
+
+    <!-- Navigation Tabs -->
+    <string name="title_home">หน้าแรก</string>
+    <string name="title_add">เพิ่ม</string>
+    <string name="title_dashboard">การให้คะแนน</string>
+    <string name="title_settings">การตั้งค่า</string>
+
+    <!-- Settings Page -->
+    <string name="change_language">เปลี่ยนภาษา</string>
+    <string name="logout">ออกจากระบบ</string>
+    <string name="select_language">เลือกภาษา</string>
+    <string name="confirm">ยืนยัน</string>
+
+    <!-- Languages -->
+    <string name="lang_english">อังกฤษ</string>
+    <string name="lang_thai">ไทย</string>
+    <string name="lang_chinese">จีน</string>
+    <string name="lang_japanese">ญี่ปุ่น</string>
+</resources>

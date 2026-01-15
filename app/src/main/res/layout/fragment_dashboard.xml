@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDDFED"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <TextView
+        android:id="@+id/tv_mood_overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Mood Overview"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart"
+        android:layout_width="404dp"
+        android:layout_height="298dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_mood_overview">
+
+    </com.github.mikephil.charting.charts.PieChart>
+
+    <LinearLayout
+        android:id="@+id/legendLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pieChart">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="85dp"
+            android:layout_marginTop="2dp"
+            android:padding="10dp">
+
+            <View
+                android:id="@+id/view_happy"
+                android:layout_width="372dp"
+                android:layout_height="65dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="#FDF7DB" />
+
+            <TextView
+                android:id="@+id/happyPercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="😊 Happy: 0%"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="85dp"
+            android:padding="10dp">
+
+            <View
+                android:id="@+id/view_sad"
+                android:layout_width="372dp"
+                android:layout_height="65dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="#FDF7DB" />
+
+            <TextView
+                android:id="@+id/sadPercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="😢 Sad: 0%"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="85dp"
+            android:padding="10dp">
+
+            <View
+                android:id="@+id/View_boring"
+                android:layout_width="372dp"
+                android:layout_height="65dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="#FDF7DB" />
+
+            <TextView
+                android:id="@+id/boredPercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="😴 Bored: 0%"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="85dp"
+            android:padding="10dp">
+
+            <View
+                android:id="@+id/view_love"
+                android:layout_width="372dp"
+                android:layout_height="65dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="#FDF7DB" />
+
+            <TextView
+                android:id="@+id/lovePercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="😍 Love: 0%"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="85dp"
+            android:padding="10dp">
+
+            <View
+                android:id="@+id/view_mad"
+                android:layout_width="372dp"
+                android:layout_height="65dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="#FDF7DB" />
+
+            <TextView
+                android:id="@+id/angryPercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="😡 Angry: 0%"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/switchCategory"
+        android:layout_width="162dp"
+        android:layout_height="62dp"
+        android:text="Show Private"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/legendLayout"
+        app:layout_constraintEnd_toEndOf="@+id/pieChart" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

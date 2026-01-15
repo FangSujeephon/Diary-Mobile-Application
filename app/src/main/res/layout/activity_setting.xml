@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDDFED"
+    tools:context=".ui.setting.SettingFragment">
+
+
+    <View
+        android:id="@+id/view_account"
+        android:layout_width="394dp"
+        android:layout_height="73dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="#FDF7DB"
+        app:layout_constraintBottom_toTopOf="@+id/tvPasscode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <View
+        android:id="@+id/view_pass"
+        android:layout_width="394dp"
+        android:layout_height="73dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="#FDF7DB"
+        app:layout_constraintBottom_toTopOf="@+id/tvTerm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.854" />
+
+    <View
+        android:id="@+id/view_terms"
+        android:layout_width="394dp"
+        android:layout_height="73dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="#FDF7DB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.427" />
+
+    <TextView
+        android:id="@+id/tvAccount"
+        android:layout_width="362dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="156dp"
+        android:clickable="true"
+        android:drawableLeft="@drawable/baseline_account_circle_24"
+        android:drawablePadding="16dp"
+        android:padding="12dp"
+        android:text="Account"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.346"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPasscode"
+        android:layout_width="376dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:drawableLeft="@drawable/baseline_key_24"
+        android:drawablePadding="16dp"
+        android:padding="12dp"
+        android:text="Passcode"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view_pass" />
+
+    <TextView
+        android:id="@+id/tvTerm"
+        android:layout_width="356dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:drawableLeft="@drawable/baseline_library_books_24"
+        android:drawablePadding="16dp"
+        android:padding="12dp"
+        android:text="Terms and Conditions"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view_terms" />
+
+    <TextView
+        android:id="@+id/tv_logout"
+        android:layout_width="130dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="140dp"
+        android:clickable="true"
+        android:drawableLeft="@drawable/baseline_logout_24"
+        android:drawablePadding="12dp"
+        android:gravity="center_vertical"
+        android:text="Log out"
+        android:textColor="#FF0000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

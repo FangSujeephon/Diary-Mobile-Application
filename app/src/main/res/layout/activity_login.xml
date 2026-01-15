@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDDFED"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/text_log"
+        android:layout_width="255dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="99dp"
+        android:text="LOG IN"
+        android:textAlignment="center"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="345dp"
+        android:layout_height="382dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="92dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="#FDFDFD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_user"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="52dp"
+        android:ems="10"
+        android:hint="Enter your email"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.846"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <EditText
+        android:id="@+id/edt_pass"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/edt_user" />
+
+    <Button
+        android:id="@+id/btn_log"
+        android:layout_width="299dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#4C4A4A"
+        android:text="Log in"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/edt_pass"
+        app:layout_constraintVertical_bias="0.175" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="199dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="88dp"
+        android:text="Don't have an account?"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_log"
+        app:layout_constraintVertical_bias="0.279" />
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="147dp"
+        android:layout_height="79dp"
+        android:layout_marginBottom="96dp"
+        android:clickable="true"
+        android:text="Register"
+        android:textColor="#FF0000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.973"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/view_white"
+        android:layout_width="186dp"
+        android:layout_height="199dp"
+        android:layout_marginTop="320dp"
+        android:background="@drawable/circle_shape"
+        android:backgroundTint="#FFFEFE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/View_yellow"
+        android:layout_width="160dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="335dp"
+        android:background="@drawable/circle_shape"
+        android:backgroundTint="@color/yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="178dp"
+        android:layout_height="185dp"
+        android:layout_marginTop="310dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

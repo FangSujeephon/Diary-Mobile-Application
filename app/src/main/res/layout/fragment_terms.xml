@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDDFED"
+    tools:context=".ui.setting.TermsFragment">
+
+    <TextView
+        android:id="@+id/tvTermsHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Terms and Conditions"
+        android:textColor="#333333"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="42dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.013"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_new_24" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="393dp"
+        android:layout_height="758dp"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="36dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="576dp"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvTermsContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:text="
+Last Updated: [8 MAY 2024]
+
+Welcome to LazyDiary! By using this application, you agree to the following terms and conditions.
+
+1. **Use of Service**
+   - This app is designed for personal journaling and diary-keeping.
+   - You are responsible for the content you store in the app.
+
+2. **Privacy And Security**
+   - Your diary entries are private and accessible only to you.
+   - You may set a passcode to protect your private entries.
+   - We do not share your personal data with third parties.
+
+3. **User Responsibilities**
+   - Do not store or share harmful, illegal, or offensive content.
+   - Keep your passcode secure; we are not responsible for lost access.
+
+4. **Data Storage And Backup**
+   - Your data is stored securely within the app and/or cloud services.
+   - We recommend backing up important diary entries manually if needed.
+
+5. **Changes to Terms**
+   - We may update these terms periodically.
+   - Continued use of the app indicates acceptance of any changes.
+
+By using LazyDiary, you acknowledge that you have read and agreed to these terms.
+
+If you have any questions, please contact: **support@lazydiary.com**"
+                android:textAlignment="textStart"
+                android:textColor="#555555"
+                android:textSize="16sp" />
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

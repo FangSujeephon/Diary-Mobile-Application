@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDDFED">
+
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="380dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="104dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="#BCEFBAB6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtTitle"
+        android:layout_width="361dp"
+        android:layout_height="68dp"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="text"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/view5"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintHorizontal_bias="0.631"
+        app:layout_constraintStart_toStartOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.571" />
+
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="378dp"
+        android:layout_height="596dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="#BCEFBAB6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.77" />
+
+    <EditText
+        android:id="@+id/edtContent"
+        android:layout_width="393dp"
+        android:layout_height="461dp"
+        android:background="@android:color/transparent"
+        android:gravity="top|start"
+        android:hint="Write your Feelings...."
+        android:inputType="textMultiLine"
+        android:padding="12dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view5"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/view5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.656" />
+
+    <Button
+        android:id="@+id/btnDatePicker"
+        android:layout_width="367dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="168dp"
+        android:backgroundTint="#C3B0B2EA"
+        android:text="Select Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="42dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_new_24" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="370dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/rounded_corner2"
+        android:backgroundTint="#FDF7DB"
+        app:layout_constraintBottom_toBottomOf="@+id/view5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/View_boring"
+        android:layout_width="69dp"
+        android:layout_height="65dp"
+        android:background="@drawable/circle_shape"
+        android:backgroundTint="#FDF7DB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/emoji_boring" />
+
+    <View
+        android:id="@+id/View_happy"
+        android:layout_width="69dp"
+        android:layout_height="65dp"
+        android:background="@drawable/circle_shape"
+        android:backgroundTint="#FDF7DB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.295"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/emoji_happy" />
+
+    <View
+        android:id="@+id/View_love"
+        android:layout_width="69dp"
+        android:layout_height="65dp"
+        android:background="@drawable/circle_shape"
+        android:backgroundTint="#FDF7DB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view4" />
+
+    <View
+        android:id="@+id/View_mad"
+        android:layout_width="69dp"
+        android:layout_height="65dp"
+        android:background="@drawable/circle_shape"
+        android:backgroundTint="#FDF7DB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/emoji_mad" />
+
+    <View
+        android:id="@+id/View_sad"
+        android:layout_width="69dp"
+        android:layout_height="65dp"
+        android:background="@drawable/circle_shape"
+        android:backgroundTint="#FDF7DB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.722"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/emoji_sad" />
+
+    <ImageView
+        android:id="@+id/emoji_boring"
+        android:layout_width="73dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view5"
+        app:layout_constraintEnd_toStartOf="@+id/emoji_happy"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/neutral_" />
+
+    <ImageView
+        android:id="@+id/emoji_love"
+        android:layout_width="73dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="144dp"
+        app:layout_constraintBottom_toBottomOf="@+id/emoji_happy"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintTop_toTopOf="@+id/emoji_happy"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/fin" />
+
+    <ImageView
+        android:id="@+id/emoji_happy"
+        android:layout_width="73dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="212dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toEndOf="@+id/View_mad"
+        app:layout_constraintTop_toBottomOf="@+id/edtContent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/happy" />
+
+    <ImageView
+        android:id="@+id/emoji_sad"
+        android:layout_width="73dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="64dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintStart_toStartOf="@+id/View_love"
+        app:layout_constraintTop_toTopOf="@+id/view4"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/sad" />
+
+    <ImageView
+        android:id="@+id/emoji_mad"
+        android:layout_width="73dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="64dp"
+        app:layout_constraintBottom_toBottomOf="@+id/emoji_sad"
+        app:layout_constraintStart_toEndOf="@+id/View_love"
+        app:layout_constraintTop_toTopOf="@+id/emoji_sad"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/mad" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="93dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="6dp"
+        android:backgroundTint="#C3B0B2EA"
+        android:text="save"
+        android:textColor="#4C4A4A"
+        app:layout_constraintBottom_toTopOf="@+id/edtTitle"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
